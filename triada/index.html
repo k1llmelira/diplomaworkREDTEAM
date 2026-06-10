@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TRIADA Intelligence Corporation</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<script src="https://cdn.jsdelivr.net/npm/app.js"></script>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="brand">
+
+<img src="assets/triada-seal.png" alt="TRIADA">
+
+<h1>TRIADA</h1>
+
+</div>
+
+<div class="menu">
+
+<a href="#">INTELLIGENCE</a>
+
+<a href="#">OPERATIONS</a>
+
+<a href="#">REPORTS</a>
+
+<a href="#">THREATS</a>
+
+<a href="#">NEWS</a>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="world"></div>
+
+<div class="hero-content">
+
+<img src="assets/triada-seal.png">
+
+<h1>TRIADA</h1>
+
+<p>GLOBAL CYBER INTELLIGENCE NETWORK</p>
+
+<div class="hero-status">
+
+NETWORK STATUS:
+<span id="threatStatus">SECURE</span>
+
+</div>
+
+<br><br>
+
+<div id="clock"></div>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="stats">
+
+<div class="stat">
+
+<h2 id="threats">0</h2>
+
+<p>Threats Analyzed</p>
+
+</div>
+
+<div class="stat">
+
+<h2 id="systems">0</h2>
+
+<p>Protected Systems</p>
+
+</div>
+
+<div class="stat">
+
+<h2 id="operations">0</h2>
+
+<p>Active Operations</p>
+
+</div>
+
+<div class="stat">
+
+<h2 id="nodes">0</h2>
+
+<p>Global Nodes</p>
+
+</div>
+
+</section>
+
+<!-- DASHBOARD -->
+
+<section class="section">
+
+<h2 class="section-title">
+
+LIVE INTELLIGENCE CENTER
+
+</h2>
+
+<div class="grid">
+
+<!-- THREATS -->
+
+<div class="panel">
+
+<div class="panel-title">
+
+LIVE THREAT FEED
+
+</div>
+
+<div id="liveFeed">
+
+<div class="feed-item critical">
+
+APT Activity Detected
+
+</div>
+
+<div class="feed-item high">
+
+Ransomware Campaign
+
+</div>
+
+<div class="feed-item medium">
+
+Credential Leak
+
+</div>
+
+</div>
+
+</div>
+
+<!-- NEWS -->
+
+<div class="panel">
+
+<div class="panel-title">
+
+LATEST CYBER NEWS
+
+</div>
+
+<div id="headline">
+
+New Intelligence Report Released
+
+</div>
+
+<br>
+
+<div class="news-card">
+
+Critical Infrastructure Threat Assessment
+
+</div>
+
+<div class="news-card">
+
+AI Malware Research Findings
+
+</div>
+
+<div class="news-card">
+
+International Cybercrime Investigation
+
+</div>
+
+<div class="news-card">
+
+Advanced Persistent Threat Analysis
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- RADAR + ROUTES -->
+
+<section class="section">
+
+<h2 class="section-title">
+
+GLOBAL CYBER OPERATIONS
+
+</h2>
+
+<div class="grid">
+
+<div class="panel radar">
+
+<div class="radar-circle">
+
+<div class="sweep"></div>
+
+</div>
+
+</div>
+
+<div class="panel">
+
+<div class="panel-title">
+
+ACTIVE ATTACK ROUTES
+
+</div>
+
+<div id="routes"></div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ANALYTICS -->
+
+<section class="section">
+
+<h2 class="section-title">
+
+THREAT ANALYTICS
+
+</h2>
+
+<div class="grid">
+
+<div class="panel">
+
+<div class="panel-title">
+
+THREAT DISTRIBUTION
+
+</div>
+
+<div class="chart-container">
+
+<canvas id="threatChart"></canvas>
+
+</div>
+
+</div>
+
+<div class="panel">
+
+<div class="panel-title">
+
+GLOBAL THREAT ACTIVITY
+
+</div>
+
+<div class="chart-container">
+
+<canvas id="activityChart"></canvas>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TERMINAL -->
+
+<section class="section">
+
+<h2 class="section-title">
+
+SOC TERMINAL
+
+</h2>
+
+<div class="terminal" id="terminal">
+
+</div>
+
+</section>
+
+<!-- REPORTS -->
+
+<section class="section">
+
+<h2 class="section-title">
+
+INTELLIGENCE REPORTS
+
+</h2>
+
+<div class="grid">
+
+<div class="panel">
+
+<div class="panel-title">
+
+APT GROUPS
+
+</div>
+
+<p>
+
+Analysis of advanced persistent threat groups,
+their infrastructure, tactics and capabilities.
+
+</p>
+
+</div>
+
+<div class="panel">
+
+<div class="panel-title">
+
+ZERO-DAY RESEARCH
+
+</div>
+
+<p>
+
+Tracking newly discovered vulnerabilities
+and exploitation activity.
+
+</p>
+
+</div>
+
+<div class="panel">
+
+<div class="panel-title">
+
+RANSOMWARE INTELLIGENCE
+
+</div>
+
+<p>
+
+Monitoring ransomware operators and
+global attack campaigns.
+
+</p>
+
+</div>
+
+<div class="panel">
+
+<div class="panel-title">
+
+SUPPLY CHAIN SECURITY
+
+</div>
+
+<p>
+Assessment of software supply chain
+risks and third-party exposure.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+CLASSIFICATION: TOP SECRET
+
+<br><br>
+
+NETWORK: TRIADA GLOBAL SECURE GRID
+
+<br><br>
+
+ENCRYPTION: AES-256
+
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
+
